@@ -1,0 +1,232 @@
+/*内容***********************************************/
+/*搜索栏*********************************************/
+.banner{
+    width: 100%;
+    height: 2.24rem;
+    background: url("../image/index/banner.png") center center no-repeat;
+    background-size:cover;
+    font-size: 0;
+    position: relative;
+}
+.banner form{
+    position: absolute;
+    bottom:.1rem;
+    left:.15rem;
+}
+.icon_search{
+    background: url("../image/index/seach.jpg") center center no-repeat;
+    background-size:cover;
+    width:.15rem;
+    height:.15rem;
+    position: absolute;
+    bottom:.1rem;
+    left:.1rem;
+}
+.banner input{
+    width: 2.88rem;
+    height: .35rem;
+    line-height: .35rem;
+    text-indent: .33rem;
+    font-size: .14rem;
+    color: #757575;
+    border-radius:6px;
+    box-shadow: inset 2px 2px #9a9a9a,2px 2px #dedddb;
+   /*box-shadow: inset 3px 3px rgba(204, 204, 204, 0.39),3px 3px rgba(204, 204, 204, 0.39);*/
+}
+
+/*导航列表栏*********************************************/
+.nav_list>ul {
+    display: flex;
+    flex-direction: row;
+    font-size: .11rem;
+    background: #ff8a00;
+    color: #ffffff;
+    padding: .15rem 0;
+    margin-bottom: .1rem;
+}
+.nav_list li{
+    width:25%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.nav_list li span{
+    width:.55rem;
+    height: .55rem;
+}
+.nav_list li:nth-child(1) span{
+    background: url("../image/index/index_03.png")center center no-repeat;
+    background-size:contain;
+}
+.nav_list li:nth-child(2) span{
+    background: url("../image/index/index_05.png")center center no-repeat;
+    background-size:contain;
+}
+.nav_list li:nth-child(3) span{
+    background: url("../image/index/index_07.png")center center no-repeat;
+    background-size:contain;
+}
+.nav_list li:nth-child(4) span{
+    background: url("../image/index/index_09.png")center center no-repeat;
+    background-size:contain;
+}
+.banner2{
+
+    margin-bottom: .1rem;
+}
+.banner2 img{
+    width: 100%;
+}
+/*热门房源*********************************************/
+.house_list{
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: .05rem;
+}
+.house_list>li:last-child{
+    border-bottom: 0;
+}
+.hot_house h2{
+    background: #ff8a00;
+    font-size: 0.14rem;
+    color: #fff;
+    padding: .1rem 0 .1rem .2rem;
+}
+.hot_house h2 strong{
+    font-size: 0.18rem;
+}
+.hot_house h2 span {
+    font-size: 0.09rem;
+}
+.house_list>li{
+    display: flex;
+    flex-direction: row;
+    font-size:.11rem;
+    margin: 0 .21rem;
+    padding: .23rem 0;
+    border-bottom: 1px solid #ff0000;
+}
+.pic>img{
+    width: .81rem;
+    height: .81rem;
+    margin: .06rem .11rem 0 0;
+}
+.house_list a{
+    display: flex;
+    flex-direction: row;
+}
+.text{
+    width: 1.87rem;
+}
+.text p{
+    padding-top:.1rem;
+}
+.text h3{
+    font-size: .18rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text span{
+    display: inline-block;
+}
+.text>p:nth-child(2) span{
+    color: #ffa02f;
+    float: right;
+    font-weight: bolder;
+}
+.text>p:nth-child(3){
+    color: #acacac;
+}
+.text>p:nth-child(3) span{
+    float: right;
+}
+.text>p:nth-child(4) span{
+    background: #f4f7f9;
+    color: #849aae;
+    padding: .05rem;
+    margin-right: .05rem;
+}
+/*尾部列表*******************************************************************/
+.foot_list{
+    background: #ffffff;
+    font-size: .11rem;
+    color: #666666;
+    border-top:1px solid #e5e5e5;
+}
+
+.foot_list span{
+    height: .55rem;
+    display: flex;
+    align-items: center;
+    font-size: .18rem;
+    border-bottom: 1px solid #ff8a00;
+}
+.foot_list span p{
+    width: 50%;
+    height: .55rem;
+    line-height: .55rem;
+    text-align: center;
+}
+.hover{
+    color: #ff8a00;
+    border-bottom: 2px solid #ff8a00;
+}
+.foot_lis{
+    display: flex;
+    flex-direction: row;
+}
+.foot_lis ul{
+    width: 50%;
+    margin: .2rem 0 .05rem 0;
+    padding-left: .3rem;
+}
+.foot_lis ul:nth-child(2){
+    display: none;
+}
+.foot_lis ul li{
+    padding-bottom: .15rem;
+}
+/*下载广告****************************************/
+.tip{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    height: .4rem;
+}
+.download{
+    width: .3rem;
+    height:.3rem;
+    margin:.1rem .18rem 0 .3rem;
+}
+.tip_text>p:nth-child(1){
+    font-size: .18rem;
+}
+.tip_text{
+    width: 1.32rem;
+}
+.tip_text>p:nth-child(2){
+    font-size: .12rem;
+}
+.tip>span{
+    font-size: .15rem;
+    width: 1.1rem;
+    background: #ff8a00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tip .close{
+    width: .15rem;
+    height: .15rem;
+    position:absolute;
+    top:0;
+    left: 0;
+}

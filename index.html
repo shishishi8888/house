@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找房无忧-首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+<!--头部******************************************************************-->
+<header>
+    <a href="./index.html"><img src="./image/index/logo.jpg" alt="" class="logo"></a>
+    <a href="./my.html"><img src="./image/index/my.jpg" alt="" class="my"></a>
+    <a href="#"><img src="./image/index/xiazai.jpg" alt="" class="xiazai"></a>
+</header>
+<!--内容******************************************************************-->
+<!--搜索内容******************************************************************-->
+
+<section class="banner">
+    <form action="#">
+
+        <span class="icon_search"></span><input type="text" placeholder="请输入小区名或商圈名开始找房咯！">
+    </form>
+</section>
+<!--导航列表内容******************************************************************-->
+<section class="nav_list">
+    <ul>
+        <li>
+            <span></span>
+            <p><a href="./Second_handlist.html">二手房</a></p>
+        </li>
+        <li>
+            <span></span>
+            <p>新房</p>
+        </li>
+        <li>
+            <span></span>
+            <p>租房</p>
+        </li>
+        <li>
+            <span></span>
+            <p>卖房</p>
+        </li>
+    </ul>
+
+</section>
+<!--第二个大图内容******************************************************************-->
+<section class="banner2">
+    <img src="./image/index/banner2.png" alt="">
+</section>
+<!--热门房源内容******************************************************************-->
+<section class="hot_house">
+    <h2>
+        <strong>热门房源</strong><br/>
+        <span> Hot house</span>
+    </h2>
+    <ul class="house_list"></ul>
+</section>
+<!--尾部列表******************************************************************-->
+<section class="foot_list">
+        <span>
+            <p class="hover">热门关注</p>
+            <p>友情链接</p>
+        </span>
+    <div class="foot_lis">
+    <ul>
+        <li><a href="#">北京二手房</a></li>
+        <li><a href="#">北京二手房价</a></li>
+        <li><a href="#">海淀日租房</a></li>
+        <li><a href="#">朝阳新房</a></li>
+    </ul>
+    <ul >
+      <li><a href="#">北京找房无忧</a></li>
+      <li><a href="#">青年家园</a></li>
+      <li><a href="#">免税房源</a></li>
+      <li><a href="#">满五年唯一免税</a></li>
+    </ul>
+    </div>
+</section>
+<!--下载广告******************************************************************-->
+<div class="tip">
+    <img src="./image/index/download.png" alt="" class="download">
+    <div class="tip_text">
+        <p>找房无忧</p>
+        <p>市场行情，一手掌握！</p>
+    </div>
+    <span>免费下载</span>
+    <img src="./image/index/close.png" alt="" class="close">
+</div>
+<!--尾部******************************************************************-->
+<footer>
+    <div class="footer_nav">
+        <a href="./index.html">北京找房无忧 > 首页</a>
+    </div>
+    <ul class="footer_text">
+        <li>
+            <span class="icon_iphone"></span>
+            <span>iPhone
+                  客户端</span>
+        </li>
+        <li>
+            <span class="icon_android"></span>
+            <span>Android
+                  客户端</span>
+        </li>
+    </ul>
+    <div class="copyright">
+        <p>北京找房无忧房地产经纪公司</p>
+        <p>网络经营许可证京ICP备20160812号</p>
+    </div>
+</footer>
+
+<script src="js/rem.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/doT.min.js"></script>
+<script src="js/index.js"></script>
+<!--准备模板*****************************-->
+<script id="houseList" type="text/x-dot-template">
+    {{~it.hot_house:value:index}}
+    <li>
+        <a href="./Second_handlist.html">
+        <div class="pic"><img src="{{=value.pic}}" alt=""></div>
+        <div class="text">
+            <h3>{{=value.title}}</h3>
+            <p>{{=value.text_size}}<span>{{=value.money}}</span></p>
+            <p>{{=value.place}}<span>{{=value.price}}</span></p>
+            <P>
+            {{~value.other:val:ind}}
+            <span>{{=val}}</span>
+            {{~}}
+            </P>
+        </div>
+        </a>
+    </li>
+
+    {{~}}
+</script>
+<script>
+    $.ajax({
+        url: "./json/house.json",
+        success: function (data) {
+            console.log(data);
+            // dot.js 模板引擎
+            var sy_ = doT.template($('#houseList').text());
+            $('.house_list').html(sy_(data));
+        }
+    });
+</script>
+
+</body>
+</html>

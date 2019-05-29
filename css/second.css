@@ -1,0 +1,339 @@
+/*头部搜索栏*****************************************************/
+.search_box{
+    margin: .1rem auto;
+    position: relative;
+    font-size: 0;
+}
+.line{
+    position:absolute;
+    top:.1rem;
+    right:.5rem;
+    width: .01rem;
+    height: .15rem;
+    background:#840084;
+}
+.icon_search{
+    background: url("../image/SecondHandList/search_03.png") center center no-repeat;
+    background-size:cover;
+    width:.18rem;
+    height:.18rem;
+    position:absolute;
+    top:.1rem;
+    right:.15rem;
+}
+.search_box input{
+    width: 2.88rem;
+    height: .35rem;
+    line-height: .35rem;
+    font-size: .12rem;
+    text-indent: .1rem;
+    color: #757575;
+    border-radius:6px;
+    border: 1px solid #cccccc;
+}
+/*类型选择列表*******************************/
+.second_list{
+    font-size: .11rem;
+    color: #666666;
+}
+.second_list h2{
+    font-size: .17rem;
+}
+.list_title{
+    display: flex;
+    flex-direction: row;
+    height: .4rem;
+    width: 100%;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    background: #ffffff;
+    z-index: 4;
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left: 0;*/
+}
+.list_title li{
+    width: 25%;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+}
+.list_title li h2 a{
+    position: relative;
+}
+.list_title li h2 span{
+    border-top: 5px solid #ccc;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 0.06rem;
+    right: -0.14rem;
+}
+.list_title li h2 .up span{
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #ff8a00;
+    border-left: 5px solid transparent;
+    top: 0.02rem;
+}
+.list_title li h2 .up{
+    color: #ff8a00;
+}
+/*蒙版**********************************/
+.mark{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
+.someList{
+    width: 100%;
+    position: fixed;
+    top: 0.4rem;
+    left: 0;
+    z-index: 10;
+}
+.someList li{
+    /*display: none;   /!*接口*!/*/
+}
+.area{
+    display: flex;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    font-size: 0.12rem;
+    /*display: block;*/
+    display: none;
+}
+
+.area .title{
+    flex: 1;
+    background: #f0f0f0;
+    border-right: 1px solid #cccccc;
+    font-size: 0.12rem;
+    text-align: center;
+}
+.area .title h2{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.area .title .up{
+    color: #ff8a00;
+    background: #fff;
+    margin-right: -1px;
+    border-right: 2px solid #fff;;
+}
+.area .hideList{
+    flex: 3;
+}
+
+.area .hideList ul li{
+    float: left;
+    width: 45%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    /*margin-left: 0.1rem;*/
+    box-sizing: border-box;
+
+}
+.area .hideList ul li .up{
+    color: #ff8a00;
+}
+.price{
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    font-size: 0.12rem;
+    display: none;
+}
+.price li{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.price li:last-of-type{
+    border-bottom: none;
+}
+.house{
+    background: #fff;
+    padding-bottom: 0.2rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 3;
+    font-size: 0.12rem;
+    display: none;
+}
+.house li{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.house li:last-of-type{
+    border-bottom: none;
+}
+.house_list a{
+    display: flex;
+    flex-direction: row;
+}
+.house span{
+    width: 0.14rem;
+    height: 0.15rem;
+    float: right;
+    margin-top: 0.12rem;
+    margin-right: 0.2rem;
+    border: 1px solid #c5c3c3;
+}
+.house span.up{
+    border: 1px solid #ff8a00;
+    background: url("../image/SecondHandList/ok.png") center center no-repeat;
+
+}
+.house  .btnOK{
+    text-align: center;
+    background: #ff8a00;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+.more{
+    background: #fff;
+    width: 100%;
+    padding: 0 0.2rem 0.2rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    font-size: 0.12rem;
+    display: none;
+}
+.more h3{
+    padding: 0.2rem 0 0.12rem 0;
+    font-size: 0.14rem;
+}
+.more .childList{
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*flex-flow: wrap;*/
+    padding-bottom: 0.08rem;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+
+
+}
+.more .childList li{
+    float: left;
+    /*flex: 1;*/
+    width: 22%;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-left: 0.05rem;
+    margin-bottom: 0.12rem;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size: 0.1rem;
+
+
+}
+.more .childList li:first-of-type,.more .childList li:nth-of-type(5),.more .childList li:nth-of-type(9){
+    margin-left: 0;
+}
+.more .clear{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+}
+.more .btnOK{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    background: #ff8a00;
+}
+.more .btnOK a{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+/*二手房列表****************************/
+.house_list{
+
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: .05rem;
+}
+.house_list>li:last-child{
+    border-bottom: 0;
+}
+.house_list>li{
+    display: flex;
+    flex-direction: row;
+    font-size:.11rem;
+    margin: 0 .21rem;
+    padding: .23rem 0;
+    border-bottom: 1px solid #ff8a00;
+}
+.pic>img{
+    width: .81rem;
+    height: .81rem;
+    margin: .05rem .11rem 0 0;
+}
+.text{
+    width: 1.87rem;
+}
+.text p{
+    padding-top:.05rem;
+}
+.text h3{
+    font-size: .13rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .1rem;
+}
+.text span{
+    display: inline-block;
+}
+
+.text>p:nth-child(3) span{
+    color: #ffa02f;
+    font-weight: bolder;
+    margin-left: .05rem;
+}
+.text>p:nth-child(4){
+    color: #acacac;
+}
+.text>p:nth-child(5) span{
+    float: right;
+}
+.text>p:nth-child(6) span{
+    background: #f4f7f9;
+    color: #849aae;
+    padding: .05rem;
+    margin-right: .05rem;
+}

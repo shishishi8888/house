@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找房无忧-二手房</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/second.css">
+</head>
+<body>
+<!--头部******************************************************************-->
+<header>
+    <a href="./index.html"><img src="./image/index/logo.jpg" alt="" class="logo"></a>
+    <a href="./my.html"><img src="./image/index/my.jpg" alt="" class="my"></a>
+    <a href="#"><img src="./image/index/xiazai.jpg" alt="" class="xiazai"></a>
+</header>
+<!--头部搜索栏*************************************************************-->
+<section class="search_box">
+    <input type="text" placeholder="请输入小区名或商圈名称">
+   <span class="icon_search"></span><div class="line"></div>
+</section>
+<!--类型选择列表*************************************************************-->
+<section class="second_list">
+   <!--蒙版-->
+    <div class="mark"></div>
+    
+    <ul class="list_title">
+        <li>
+           <h2><a href="#">区域<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">价格<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">房型<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">更多<span></span></a></h2>
+        </li>
+    </ul>
+    <ul class="someList">
+        <!--区域***************************-->
+        <li class="area">
+            <div class="title">
+                <h2 class="up">区域</h2>
+                <h2>地铁</h2>
+            </div>
+            <div class="hideList">
+                <ul>
+                    <li><a href="#">附近</a></li>
+                    <li><a class="up" href="#">不限</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">不限</a></li>
+                    <li><a href="#">安贞</a></li>
+                    <li><a class="up" href="#">朝阳</a></li>
+                    <li><a href="#">奥林匹克公园</a></li>
+                    <li><a href="#">海淀</a></li>
+                    <li><a href="#">百子湾</a></li>
+                    <li><a href="#">昌平</a></li>
+                    <li><a href="#">北工大</a></li>
+                    <li><a href="#">丰台</a></li>
+                    <li><a href="#">北苑</a></li>
+                    <li><a href="#">石景山</a></li>
+                    <li><a href="#">CBD</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--价格***************************************-->
+        <li class="price">
+            <ul>
+                <li><a href="#">不限</a></li>
+                <li><a href="#">100万以下</a></li>
+                <li><a href="#">100万-150万</a></li>
+                <li><a href="#">150万-200万</a></li>
+                <li><a href="#">200万-250万</a></li>
+                <li><a href="#">250万-300万</a></li>
+                <li><a href="#">自定义价格</a></li>
+            </ul>
+        </li>
+        <!--房型****************************************-->
+        <li class="house">
+            <ul>
+                <li>不限</li>
+                <li>
+                    1室 <span></span>
+                </li>
+                <li>
+                    2室 <span class="up"></span>
+                </li>
+                <li>
+                    3室 <span></span>
+                </li>
+                <li>
+                    4室 <span></span>
+                </li>
+                <li>
+                    5室 <span></span>
+                </li>
+                <li><a class="btnOK" href="#">确定</a></li>
+            </ul>
+        </li>
+        <!--更多******************************************-->
+        <li class="more">
+            <ul>
+                <li>
+                    <h3>区域</h3>
+                    <ul class="childList">
+                        <li>南</li>
+                        <li>南北</li>
+                        <li>东</li>
+                        <li>西</li>
+                        <li>北</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>面积（平方）</h3>
+                    <ul class="childList">
+                        <li>50以下</li>
+                        <li>50-70</li>
+                        <li>70-90</li>
+                        <li>90-110</li>
+                        <li>110-130</li>
+                        <li>130-150</li>
+                        <li>150-200</li>
+                        <li>200以上</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>标签</h3>
+                    <ul class="childList">
+                        <li>学区房</li>
+                        <li>地铁房</li>
+                        <li>不限购</li>
+                        <li>满两年</li>
+                        <li>满五唯一</li>
+                        <li>降价</li>
+                        <li>新上</li>
+                        <li>独家</li>
+                        <li>有钥匙</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>楼龄</h3>
+                    <ul class="childList">
+                        <li>5年以内</li>
+                        <li>10年以内</li>
+                        <li>10-20年</li>
+                        <li>20年以上</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>楼层</h3>
+                    <ul class="childList">
+                        <li>低楼层</li>
+                        <li>中楼层</li>
+                        <li>高楼层</li>
+                    </ul>
+                </li>
+                <li class="clear"><a href="#">清空条件</a></li>
+                <li class="btnOK"><a href="#">确定</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
+<!--二手房列表*************************************************************-->
+
+<section>
+    <ul class="house_list">
+        <!--<li>-->
+            <!--<div class="pic"><img src="./image/SecondHandList/img1.png" alt=""></div>-->
+            <!--<div class="text">-->
+                <!--<h3>西便门外大街2室1厅89平</h3>-->
+                <!--<p>南北 高楼层</p>-->
+                <!--<p>签约价格:13244元<span>905万</span></p>-->
+                <!--<P>签约日期:2015年11月10日</P>-->
+            <!--</div>-->
+        <!--</li>-->
+    </ul>
+</section>
+<!--尾部******************************************************************-->
+<footer>
+    <div class="footer_nav">
+        <a href="./index.html">北京找房无忧 > 首页</a>
+    </div>
+    <ul class="footer_text">
+        <li>
+            <span class="icon_iphone"></span>
+            <span>iPhone
+                  客户端</span>
+        </li>
+        <li>
+            <span class="icon_android"></span>
+            <span>Android
+                  客户端</span>
+        </li>
+    </ul>
+    <div class="copyright">
+        <p>北京找房无忧房地产经纪公司</p>
+        <p>网络经营许可证京ICP备20160812号</p>
+    </div>
+</footer>
+
+<script src="js/rem.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/doT.min.js"></script>
+<script src="js/second.js"></script>
+<!--准备模板*****************************-->
+<script id="houseList" type="text/x-dot-template">
+    {{~it.second_house:value:index}}
+    <li>
+        <a href="./detail.html">
+        <div class="pic"><img src="{{=value.pic}}" alt=""></div>
+        <div class="text">
+            <h3>{{=value.title}}</h3>
+            <p>{{=value.text_size}}</p>
+            <p>{{=value.money}}<span>{{=value.price}}</span></p>
+            <P>{{=value.time}}</P>
+        </div>
+        </a>
+    </li>
+    {{~}}
+</script>
+<script>
+    $.ajax({
+        url: "./json/house.json",
+        success: function (data) {
+            // console.log(data);
+            // dot.js 模板引擎
+            var sy_ = doT.template($('#houseList').text());
+            $('.house_list').html(sy_(data));
+        }
+    });
+</script>
+</body>
+</html>

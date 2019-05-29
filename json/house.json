@@ -1,0 +1,83 @@
+{
+  "hot_house":[{
+    "pic": "./image/index/img1.jpg",
+    "title": "文化部中间层  一层带阁楼",
+    "text_size": "2室1厅96㎡南北",
+    "money": "1105万",
+    "place": "红庙北里",
+    "price": "14268元/平",
+    "other":["学区房", "独家"]
+
+},
+    {
+    "pic": "./image/index/img2.png",
+    "title": "光大水墨  精装复式 稀缺",
+    "text_size": "室1厅96㎡南北",
+    "money": "280万",
+    "place": "光大水墨",
+    "price": "14268元/平",
+      "other":["学区房", "独家","满五唯一"]
+
+  },
+    {
+      "pic": "./image/index/img3.png",
+      "title": "南北通透两居  精装修 无",
+      "text_size": "2室1厅96㎡南北",
+      "money": "320万",
+      "place": "北京新天地",
+      "price": "14268元/平",
+      "other":["地铁房", "独家"]
+    }
+  ],
+
+  "second_house": [
+    {
+      "pic": "./image/SecondHandList/img1.png",
+      "title": "西便门外大街2室1厅89平",
+      "text_size": "南北 高楼层",
+      "money": "签约价格:13244元",
+      "price": "905万",
+      "time": "签约日期:2015年11月10日"
+    },
+    {
+      "pic": "./image/SecondHandList/img2.png",
+      "title": "花涧溪二期 2室2厅 90平",
+      "text_size": "南北 高楼层/6层",
+      "money": "签约价格:13244元/平",
+      "price": "1322万",
+      "time": "签约日期:2015年11月10日"
+    },
+    {
+      "pic": "./image/SecondHandList/img3.png",
+      "title": "金桥国际 1室1厅 63平",
+      "text_size": "南北 高楼层/6层",
+      "money": "签约价格:13244元/平",
+      "price": "1322万",
+      "time": "签约日期:2015年11月10日"
+    },
+    {
+      "pic": "./image/SecondHandList/img4.png",
+      "title": "金桥国际 1室1厅 63平",
+      "text_size": "南北 高楼层/6层",
+      "money": "签约价格:13244元/平",
+      "price": "1322万",
+      "time": "签约日期:2015年11月10日"
+    },
+    {
+      "pic": "./image/SecondHandList/img5.png",
+      "title": "金桥国际 1室1厅 63平",
+      "text_size": "南北 高楼层/6层",
+      "money": "签约价格:13244元/平",
+      "price": "1322万",
+      "time": "签约日期:2015年11月10日"
+    },
+    {
+      "pic": "./image/SecondHandList/img6.png",
+      "title": "金桥国际 1室1厅 63平",
+      "text_size": "南北 高楼层/6层",
+      "money": "签约价格:13244元/平",
+      "price": "1322万",
+      "time": "签约日期:2015年11月10日"
+    }
+  ]
+}

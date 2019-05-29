@@ -1,0 +1,79 @@
+/**********************样式重置***************************/
+body,p,h1,h2,h3,h4,ul,dl,dd,input,figure{margin: 0;padding: 0;}
+header,nav,main,footer,section,article,aside,ul,li,dl,dt,dd,p,div,h1,h2,h3,h4{box-sizing:border-box;}
+ul li{list-style: none;}
+a{text-decoration: none;color: inherit;}
+img,input{border: 0;vertical-align: top; outline: none;}
+i,em{font-style:normal;}
+html,body{width: 100%;}
+body{display: flex;flex-direction: column;background: #f5f5f5;}
+span{display: block;}
+
+
+/*公共头部部分代码*********************************************/
+header{
+    height: .42rem;
+    overflow: hidden;
+    padding: 0 .32rem;
+    background: #ff8a00;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+}
+header>a>img{
+    height: .29rem;
+}
+.logo{
+    margin-right: .88rem;
+}
+.my{
+    margin-right: .2rem;
+}
+/*公共尾部部分代码*********************************************/
+footer{
+    height: 1.55rem;
+    font-size: .12rem;
+    color: #939494;
+    background: #2f3130;
+}
+.footer_nav{
+    margin:0 .15rem;
+    border-bottom:1px solid #3e403f;
+    padding: .14rem 0;
+}
+.footer_text{
+    display: flex;
+    flex-direction: row;
+    margin-top: .15rem;
+
+}
+.footer_text>li{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_iphone{
+    width: .18rem;
+    height: .2rem;
+    background: url("../image/index/apple.png") center center no-repeat;
+    background-size:cover;
+    margin-right: .15rem;
+}
+.icon_android{
+    width: .18rem;
+    height: .2rem;
+    background: url("../image/index/android.png") center center no-repeat;
+    background-size:cover;
+    margin-right: .15rem;
+}
+.footer_text li>span:nth-child(2){
+    width:.4rem;
+}
+.copyright{
+    text-align: center;
+    margin: .13rem 0;
+}
+.copyright>p{
+    padding-top: .03rem;
+}
